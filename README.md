@@ -6,7 +6,14 @@
 git clone https://github.com/zuokerb/linuxshell.git
 
 ##使用
-### CentOS系统 PHP+NGINX+MYSQL 安装
-cd ./linuxshell/centos/
-chmod +x ./npm-install.sh
-./nmp-install.sh
+### CentOS PHP+NGINX+MYSQL 环境安装
+cd ./linuxshell/centos/<br>
+chmod +x ./npm-install.sh<br>
+./nmp-install.sh<br>
+
+### NGINX 日志切割
+cd ./linuxshell/<br>
+chmod +x ./nginx-log-cat.sh<br>
+./nginx-log-cat.sh<br>
+添加crontab每日凌晨3点执行
+00 3 * * * {脚本所在目录}/nginx-log-cat.sh

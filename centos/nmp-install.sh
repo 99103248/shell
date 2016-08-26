@@ -1,5 +1,10 @@
 #! /bin/bash -e
-#
+###############################################
+# this script install and config php-fpm & mysql & nginx
+# To use: 
+# chmod 777 nmp-install.sh
+# ./npm-install.sh
+###############################################
 platform=`uname -i`
 if [ $platform != "x86_64" ];then
 	echo "\033[31mthis script is only for 64bit Operating System !\033[0m"
